@@ -26,7 +26,6 @@ def find_longest_sequence(matrix):
     rowdiff = appmatrix[:,1:] - appmatrix[:,:-1]
     coldiff = appmatrix[1:,:] - appmatrix[:-1,:]
     
-    max_length = 0
     # count row sequences
     startseq = np.argwhere(rowdiff==1)
     endseq = np.argwhere(rowdiff==-1)
